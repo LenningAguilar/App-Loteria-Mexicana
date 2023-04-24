@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lotería - Inicio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
+    <script defer src='js/javascript.js'></script>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="nav">
+        <h1 class="nav__textobienvenida">Barajando para la victoria: el juego de lotería más emocionante</h1>
+    </nav> <!-- nav -->
+    
+    <!-- main -->
+    <main class="main">
+        <!-- Section de las imagenes -->
+        <section class="main__contenedor">
+            <img src="img/loteria_imagenes/loteria_(1).jpg" alt="">
+            <img src="img/loteria_imagenes/loteria_(2).jpg" alt="">
+            <img src="img/loteria_imagenes/loteria_(3).jpg" alt="">
+            <img src="img/loteria_imagenes/loteria_(4).jpg" alt="">
+        </section><!-- Section de las imagenes -->
+        
+        <p class="main__textodescripcion">Presiona el botón para empezar</p>
+        <a class="main__boton" href="empezar.html">Empezar ahora</a>
+
+        <!-- div configurar dificultad -->
+        <div class="dificultad">
+            <p>Configuracion del juego</p>
+            <p for="num-selector">Modificar el nivel de velocidad por carta selecciona un numero del 1 al 10 (segundos): <span id="valor"></span></p>
+            <input type="range" class="num-selector" id="num-selector" name="num-selector" min="1" max="10" step="1" value="1" oninput="miFuncion()">
+        </div> <!-- div configurar dificultad -->
+    </main> <!-- main -->
+</body>
+</html>
